@@ -36,7 +36,7 @@ export type JsonContractsMcpServer = {
   close(): Promise<void>;
 };
 
-export const SERVER_VERSION = "0.1.2";
+export const SERVER_VERSION = "0.1.3";
 
 function asStructuredContent(value: unknown): Record<string, unknown> {
   if (value !== null && typeof value === "object" && !Array.isArray(value)) {
