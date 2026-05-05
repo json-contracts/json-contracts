@@ -79,6 +79,19 @@ npx -y json-contracts@latest
 
 The npm package is `json-contracts`; the installed CLI binary is still `json-contracts`.
 
+## 30-second setup
+
+Create a starter contract folder and validate it:
+
+```bash
+mkdir my-json-contracts
+cd my-json-contracts
+npx -y json-contracts@latest init
+npx -y json-contracts@latest validate
+```
+
+Then add the MCP config below to your agent host. Point `JSON_CONTRACTS_DIR` at the `json-contracts` folder that `init` created.
+
 Validate contracts in CI without starting MCP:
 
 ```bash
@@ -814,7 +827,12 @@ The local web Studio is intentionally **not bundled with this MCP package**. It 
 
 Use the Studio when you want a browser UI for testing contracts, provider-backed demos, manual repair loops, or drafting new contract files.
 
+For a quick demo with starter contracts:
+
 ```bash
+mkdir my-json-contracts
+cd my-json-contracts
+npx -y json-contracts@latest init
 npx -y json-contracts-studio@latest
 ```
 
