@@ -1,6 +1,6 @@
 {
   "name": "json-contracts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "MCP server for JSON contracts, JSON Schema validation, and structured LLM/agent outputs.",
   "type": "module",
   "bin": {
@@ -16,7 +16,8 @@
     "NOTICE",
     "README.md",
     "TRADEMARKS.md",
-    "package.json"
+    "package.json",
+    "server.json"
   ],
   "scripts": {
     "clean": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\"",
@@ -101,5 +102,6 @@
       "types": "./dist/types.d.ts",
       "import": "./dist/types.js"
     }
-  }
+  },
+  "mcpName": "io.github.json-contracts/json-contracts"
 }

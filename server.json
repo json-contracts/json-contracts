@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.json-contracts/json-contracts",
+  "title": "JSON Contracts",
+  "description": "JSON contract registry and validator for structured LLM and agent outputs.",
+  "websiteUrl": "https://github.com/json-contracts/json-contracts#readme",
+  "repository": {
+    "url": "https://github.com/json-contracts/json-contracts",
+    "source": "github",
+    "id": "1230012930"
+  },
+  "version": "0.1.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "json-contracts",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "JSON_CONTRACTS_DIR",
+          "description": "Folder containing JSON contract files. Defaults to ./json-contracts.",
+          "format": "filepath",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}
