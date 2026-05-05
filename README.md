@@ -1,6 +1,6 @@
 # JSON Contracts MCP Server
 
-JSON Contracts is a local MCP contract server for JSON contracts, JSON Schema validation, and structured LLM/agent outputs. It gives agents Git-controlled contracts and validation tools so any model can reliably convert natural language into schema-valid JSON.
+JSON Contracts is a local MCP contract server for natural-language-to-JSON workflows. It gives agents Git-controlled JSON contracts, rules, examples, and JSON Schema validation tools so any model can reliably convert natural-language requests into schema-valid JSON.
 
 The MCP server does not call an LLM provider.
 The MCP server does not need API keys.
@@ -10,9 +10,10 @@ The MCP server does not generate JSON by itself.
 
 The optional Studio is a separate package/repo for live demos and local contract testing. The MCP stdio server itself does not call LLM providers.
 
+Your user provides natural language.
 Your agent chooses the model.
-Your agent performs the conversion.
-`json-contracts` provides the contract.
+Your agent performs the natural-language-to-JSON conversion.
+`json-contracts` provides the contract and validates the result.
 
 ## Correct mental model
 

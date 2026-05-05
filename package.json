@@ -1,7 +1,7 @@
 {
   "name": "json-contracts",
   "version": "0.1.2",
-  "description": "MCP server for JSON contracts, JSON Schema validation, and structured LLM/agent outputs.",
+  "description": "MCP server for natural-language-to-JSON workflows using Git-controlled JSON contracts and JSON Schema validation.",
   "type": "module",
   "bin": {
     "json-contracts": "./dist/index.js"
