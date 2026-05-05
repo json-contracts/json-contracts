@@ -147,7 +147,7 @@ describe("json-contracts MCP server", () => {
     const status = await state.client.callTool({ name: "status", arguments: {} });
     expect(status.structuredContent).toMatchObject({
       server: "json-contracts",
-      version: "0.1.0",
+      version: "0.1.1",
       loaded: 1,
       watchContracts: false,
       allowInvalidContracts: false,
